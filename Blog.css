@@ -1,0 +1,47 @@
+/*font-family: 'Source Serif Pro', serif;*/
+
+body { 
+    margin: 0 auto;
+    width:1000px;
+    
+    Border: 20px solid #bdc7cf;
+    padding: 20px;
+    }
+
+h1 {
+    text-transform: uppercase;
+    color:  #3098dd;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #354b63
+}
+
+p{
+    font-family: 'Source Serif Pro', serif;
+}
+   
+h2 + p  {
+    margin: 10px;
+    border-left: 5px solid #bdc7cf ;
+    padding: 10px;
+    }
+    
+/* makes 1st p with a different font
+h2 + p  {
+    font-family: 'Source Serif Pro', serif;
+}
+*/
+ hr{
+        border: 0;
+        border-bottom: 1px dashed #ccc;
+        background: #999;
+
+        /* hr.style-six
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+    }
