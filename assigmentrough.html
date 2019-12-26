@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Finalassugmenttest.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <!-- transition: transform 2s ease
+     data-interval="hover" -->
+    <div class="d-flex flex-column">
+
+        <!-- carouse -->
+        <!-- changes in code: data-ride=" carousel" - changes slide, data-ride="carousel controle" -doesn't change unless
+        clicked -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel controle">
+            <!-- removed this: <div class="carousel-inner"> -->
+
+            <div class="carousel-item active">
+                <img src="imageforportfoliofinalassigment/tilesselesjan.jpeg" class=" w-100"
+                    alt="Teatru Salesjan tile pattern">
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <!-- card 1-->
+                    <div class="card" style="width: 18rem;">
+                        <h5 class="card-title">Card title</h5>
+                        <img src="imageforportfoliofinalassigment/01copy.jpeg" class="card-img-top" alt="totebag">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!-- link to next html file-->
+                        </div>
+                    </div>
+
+                    <!-- card 2-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="imageforportfoliofinalassigment/01copy.jpeg" class="card-img-top" alt="totebag">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!-- link to next html file-->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                data-interval="false">
+                <!-- changed this: <span class="sr-only">Previous</span> to <span class="carousel-control-prev-icon" aria-hidden="true"></span>- arrows synced only to click -->
+                <span class="carousel-control-prev-icon" control-hidden="false"></span>
+                <!--from aria-hidden="true"-respondes automatic change to control-hidden="true"- respondes to click -->
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                data-interval="false">
+                <!-- removed this: <span class="sr-only">Next</span>-->
+                <span class="carousel-control-next-icon" control-hidden="false"></span>
+            </a>
+            <h1> Graphical Design</h1>
+        </div>
+
+
+
+        <!-- carouse 2 -->
+        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel controle">
+
+            <div class="carousel-item active">
+                <img src="imageforportfoliofinalassigment/background.png" class=" w-100" alt="background painting muza">
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-row bd-highlight mb-3"></div>
+
+                <!-- card 1-->
+                <div class="card" style="width: 18rem;">
+                    <h5 class="card-title">Card title</h5>
+                    <img src="imageforportfoliofinalassigment/Bust1copy.png" class="card-img-top" alt="busts">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- link to next html file-->
+                    </div>
+                </div>
+
+            </div>
+            <a id="carouselExampleControls2" href="#" role="button" data-slide="prev" data-interval="false">
+                <span class="carousel-control-prev-icon" control-hidden="false"></span>
+            </a>
+            <a id="carouselExampleControls2" href="#" role="button" data-slide="next" data-interval="false">
+                <!--  <span class="carousel-control-next-icon" control-hidden="false"></span> 
+                <span class="<" control-hidden="false"></span>
+            </a>
+            <h1>Animation </h1>
+        </div>
+
+        <!-- ???For Mobile: $('.carousel').carousel()
+    data-ride="carousel"
+    data-interval="touch"-->
+        </div>
+
+</body>
+
+</html>

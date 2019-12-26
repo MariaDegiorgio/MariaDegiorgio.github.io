@@ -1,0 +1,44 @@
+h1{
+    /* *:not(h1)- remove padding*/  
+    writing-mode: vertical-lr;
+    position: absolute; 
+  /*  https://stackoverflow.com/questions/14634595/center-h1-over-image-in-a-div*/  
+}
+
+.carousel-item {
+    padding-left: 80px;
+   /*  <div class="carousel-inner" role="listbox" style=" width:100%; height: 300px !important;"> 
+   or 
+    height: 300px; - to specify height of carousel */  
+}
+
+.cards{ 
+    position: absolute;
+    height: 300px;
+    width: 18rem;
+    border: none;
+    /*curled edges of card */   
+    border-radius: 0px;
+}
+
+ .cards a:hover {
+    position: relative;
+    height: 300px;
+    width: 18rem;
+    transition: 0.2s ease;
+    color: black;
+    opacity: 0.5;
+}
+
+.overlay {
+    /*display: flex; */ 
+    height: 300px;
+    width: 18rem;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+        
+         
+    

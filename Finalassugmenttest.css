@@ -1,0 +1,33 @@
+#carousel-control {
+    padding-left: 5%;
+    height: 25%; 
+}
+
+
+#carousel2 {
+    padding-left: 5%;
+    height: 25%; 
+}
+ h1 {
+    /* *:not(h1)- remove padding*/  
+    writing-mode: vertical-lr;
+    font-family: 'Playfair Display', serif;
+    font-size: 2px;
+    vertical-align: middle;
+    text-align: center;
+   /*text-orientation: upright;*/
+}
+
+
+h5 {
+    text-align: center;
+} 
+
+.carousel-item a:hover {
+    border: 0 none, !important;
+    border-block: top;
+    border-bottom-block;
+}
+
+
+
