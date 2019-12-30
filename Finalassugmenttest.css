@@ -27,7 +27,9 @@ h5 {
     border: 0 none, !important;
     border-block: top;
     border-bottom-block;
+    padding: 5px;
 }
 
-
-
+.card {
+padding: 5px;
+}
