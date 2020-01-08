@@ -5,14 +5,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
 
-
-<body>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+</head>
+
+
+<body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -25,11 +26,58 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+    <!-- link to my css file -->
+    <link rel="stylesheet" type="text/css" href="parallex.css">
+
     <!-- link to font awsome -->
     <script src="https://kit.fontawesome.com/451f70d323.js" crossorigin="anonymous"></script>
 
-    <!-- link to my css file -->
-    <link rel="stylesheet" type="text/css" href="parallex.css">
+    <!-- link to google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Covered+By+Your+Grace|Damion|Great+Vibes|League+Script|Sacramento&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+        <!-- not responsive -->
+        <a class="navbar-brand disabled">Maria Degiorgio</a>
+
+
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <!-- not responsive -->
+                <a class="nav-item disabled">maria.degiorgio1997@um.edu.mt</a>
+
+                <!-- pdf cv-->
+                <!-- opens a new page - _blank -->
+                <a class="nav-item nav-link active" href="imagesforassigment/MariaCv.pdf" target="_blank"> CV <span
+                        class="sr-only">(current)</span></a>
+
+                <!-- fb account -->
+                <a class="nav-item nav-link" href="https://www.facebook.com/marija.degiorgio" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- instagram account -->
+                <a class="nav-item nav-link" href="https://www.instagram.com/mariadegiorgio_/" target="_blank">
+                    <i class=" fab fa-instagram"></i>
+                </a>
+                <a class="nav-item nav-link" href="https://www.behance.net/degiorgiom2d43/moodboards" target="_blank">
+                    <i class="fab fa-behance"></i>
+                </a>
+    </nav>
+    <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+    <!-- <nav class="navbar navbar-expand-sm bg-light justify-content-center">-->
+    </div>
+    </div>
+    </nav>
 
     <!-- method 1:how to have multiple parallexes 
         <div class="parallax" style="height:1000px;background-color:grey;font-size:36px"></div>
@@ -42,17 +90,20 @@
     </div> -->
 
     <!--link for parallex example:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax -->
-    <div class="parallax-1" style="height:1000px;background-color:white;">
+    <div class="parallax-1" style="background-color:white;">
 
-        <div class="text">
-            <h1>My Portfolio</h1>
+        <div class="text"
+            style="background-image:url(imagesforassigment/deep-blue-clouded-marble-textures-plain-820x532copy.jpg)">
 
-            <img class="intoimage" src="imagesforassigment/deep-blue-clouded-marble-textures-plain-820x532copy.jpg"
-                alt="marbel pattern image">
+            <h3>Maria Degiorgio</h3>
+            <h4>My Portfolio</h4>
+
+            <!-- <img class="intoimage" src="imagesforassigment/deep-blue-clouded-marble-textures-plain-820x532copy.jpg"
+                alt="marbel pattern image"> -->
         </div>
 
         <!-- <div class="d-flex .align-items-end justify-content-centre"> -->
-        <i class="fas fa-angle-double-down " aria-hidden="true" style="text-align: center"> </i>
+        <i class="fas fa-angle-double-down " aria-hidden="true"></i> </i>
 
         <!-- for older vesion also using button function
             <button type="button"
@@ -61,18 +112,16 @@
             </button> -->
     </div>
 
-    <div class="parallax-2 bg-secondry">
+    <div class="parallax-2" style="background-color:#58595b;">
 
-        <link rel="stylesheet" type="text/css" href="finalassigment2.css">
-        <!--links to css file-->
-        <h1> Graphic Design</h1>
+
 
 
         <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" data-interval="false">
             <!--states it's a carousel-->
             <!-- changed data-ride="carousel controle to - data-interval="false"  to make it still https://stackoverflow.com/questions/14977392/bootstrap-carousel-remove-auto-slide-->
-
-            <div class="carousel-inner" role="listbox" style="smd-xl:width:100%; height: 300px !important;">
+            <h1> Graphic Design</h1>
+            <div class="carousel-inner" role="listbox" style=" width:100%; height: 40vh !important;">
                 <!-- role... important - overrides size (crops): https://stackoverflow.com/questions/17036766/fixed-height-and-width-for-bootstrap-carousel-->
 
                 <!--slide 1 of carousel-->
@@ -84,40 +133,47 @@
                 <!-- slide 2 of carousel - give movement-->
                 <div class="carousel-item">
 
-                    <div class="cards d-flex bd-highlight sm-2; lg-3> ">
+                    <div class="cards d-flex justify-content-center">
                         <!--<div class="cards" style="width:18rem; height:300px;"></div> - style conditions size -->
 
                         <!-- card -1 link an other html - page https://stackoverflow.com/questions/3139811/how-to-link-an-image-and-target-a-new-window -->
                         <div class="card-1">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/01copy.jpeg"
                                     alt="card-1:totebag">
+
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/02copy.jpeg"
+                                    alt="card-1:totebag">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/03copy.jpeg"
+                                    alt="card-1:totebag"> -->
                             </a>
+
                             <div class="hover">
                                 <div class="overlay">
                                     <h2>
-                                        Hello World
+                                        Theatru Salesjan Tile Print
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed
+                                    <p>Some example text.</p> -->
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card-2">
+                        <div class=" card-2">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
-                                    alt="card-2:totebag">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/Bust1copy.png"
+                                    alt="card-2:Bust">
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/Bust2.png" alt="card-2:Bust">-->
                             </a>
                             <div class="hover">
                                 <div class="overlay">
                                     <h2>
-                                        Hello World
+                                        Muza Busts
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed 
+                                    <p>Some example text.</p>-->
                                 </div>
                             </div>
                         </div>
@@ -125,7 +181,7 @@
                         <div class="card-3">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/01copy.jpeg"
                                     alt="card-3:totebag">
                             </a>
                             <div class="hover">
@@ -133,8 +189,25 @@
                                     <h2>
                                         Hello World
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed
+                                    <p>Some example text.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-4">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/01copy.jpeg"
+                                    alt="card-3:totebag">
+                            </a>
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        Hello World
+                                    </h2>
+                                    <!-- extra info if needed
+                                        <p>Some example text.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -158,7 +231,7 @@
         <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="false">
             <!--states it's a carousel-->
             <!-- changed data-ride="carousel controle to - data-interval="false"  to make it still https://stackoverflow.com/questions/14977392/bootstrap-carousel-remove-auto-slide-->
-            <h1> Photography</h1>
+            <h1> Animation</h1>
             <div class="carousel-inner" role="listbox" style=" width:100%; height: 300px !important;">
                 <!-- role... important - overrides size (crops): https://stackoverflow.com/questions/17036766/fixed-height-and-width-for-bootstrap-carousel-->
 
@@ -171,23 +244,23 @@
                 <!-- slide 2 of carousel - give movement-->
                 <div class="carousel-item">
 
-                    <div class="cards d-flex bd-highlight sm-3">
+                    <div class="cards d-flex justify-content-center">
                         <!--<div class="cards" style="width:18rem; height:300px;"></div> - style conditions size -->
 
                         <!-- card -1 link an other html - page https://stackoverflow.com/questions/3139811/how-to-link-an-image-and-target-a-new-window -->
                         <div class="card-1">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
-                                    alt="card-1:totebag">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/Perspective.png"
+                                    alt="card-1:chair">
                             </a>
                             <div class="hover">
                                 <div class="overlay">
                                     <h2>
-                                        Hello World
+                                        Chair
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed 
+                                    <p>Some example text.</p>-->
                                 </div>
                             </div>
                         </div>
@@ -195,16 +268,17 @@
                         <div class="card-2">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/hidi.png"
                                     alt="card-2:totebag">
                             </a>
+
                             <div class="hover">
                                 <div class="overlay">
                                     <h2>
-                                        Hello World
+                                        2D Character Animation - Hidi
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed 
+                                    <p>Some example text.</p>-->
                                 </div>
                             </div>
                         </div>
@@ -212,7 +286,7 @@
                         <div class="card-3">
                             <a
                                 href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
-                                <img class="cards" src="imageforportfoliofinalassigment/01copy.jpeg"
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/01copy.jpeg"
                                     alt="card-3:totebag">
                             </a>
                             <div class="hover">
@@ -220,8 +294,8 @@
                                     <h2>
                                         Hello World
                                     </h2>
-                                    <!-- extra info if needed -->
-                                    <p>Some example text.</p>
+                                    <!-- extra info if needed 
+                                    <p>Some example text.</p>-->
                                 </div>
                             </div>
                         </div>
@@ -239,8 +313,189 @@
                 </a>
             </div>
         </div>
-        </canvas>
-    </div>
+
+
+        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!--states it's a carousel-->
+            <!-- changed data-ride="carousel controle to - data-interval="false"  to make it still https://stackoverflow.com/questions/14977392/bootstrap-carousel-remove-auto-slide-->
+
+            <h1> Physical Computing</h1>
+            <div class="carousel-inner" role="listbox" style=" width:100%; height: 40vh !important;">
+                <!-- role... important - overrides size (crops): https://stackoverflow.com/questions/17036766/fixed-height-and-width-for-bootstrap-carousel-->
+
+                <!--slide 1 of carousel-->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imageforportfoliofinalassigment/ PietMondrian-cover.png"
+                        class=" w-100" alt="Teatru Salesjan tile pattern - First slide">
+                </div>
+
+                <!-- slide 2 of carousel - give movement-->
+                <div class="carousel-item">
+
+                    <div class="cards d-flex justify-content-center">
+                        <!--<div class="cards" style="width:18rem; height:300px;"></div> - style conditions size -->
+
+                        <!-- card -1 link an other html - page https://stackoverflow.com/questions/3139811/how-to-link-an-image-and-target-a-new-window -->
+                        <div class="card-1">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/face04.png"
+                                    alt="card-1:frog processing sketch">
+
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/face01.jpeg"
+                                        alt="card-1:totebag">
+                                    <img class="cardsimg" src="imageforportfoliofinalassigment/face02.jpeg"
+                                        alt="card-1:totebag"> 
+                                    <img class="cardsimg" src="imageforportfoliofinalassigment/face03.jpeg"
+                                        alt="card-1:totebag">
+                                    <img class="cardsimg" src="imageforportfoliofinalassigment/face05.jpeg"
+                                        alt="card-1:totebag"> -->
+                            </a>
+
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        Drawing with Processing
+                                    </h2>
+                                    <!-- extra info if needed
+                                        <p>Some example text.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" card-2">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/stickman.png"
+                                    alt="card-2: mouse controled stickman figure">
+                            </a>
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        Mouse Oriented Object
+                                    </h2>
+                                    <!-- extra info if needed 
+                                        <p>Some example text.</p>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-3">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/Gradient-effect.png"
+                                    alt="card-3:For-Loops creating gradient effect triangles ">
+
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/curve.png"
+                                    alt="card-3:for-loops curves">
+                                 <img class="cardsimg" src="imageforportfoliofinalassigment/lines.png"
+                                    alt="card-3:for-loops with lines creating triangle">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/arrowhead.png"
+                                    alt="card-3:for-loops creating an arrowhead">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/lines2.png"
+                                    alt="card-3:for-loops with lines creating triangles">
+                                     <img class="cardsimg" src="imageforportfoliofinalassigment/dots.png"
+                                    alt="card-3:for-loops with dots - polka dots effect">
+                                -->
+                            </a>
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        For-Loops
+                                    </h2>
+                                    <!-- extra info if needed
+                                        <p>Some example text.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- slide 3 of carousel - give movement-->
+                <div class="carousel-item 2">
+                    <div class="cards d-flex justify-content-center">
+                        <!--<div class="cards" style="width:18rem; height:300px;"></div> - style conditions size -->
+
+                        <!-- card -1 link an other html - page https://stackoverflow.com/questions/3139811/how-to-link-an-image-and-target-a-new-window -->
+                        <div class="card-1">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/colouredcircles.png"
+                                    alt="card-1:random generated circles with random colour values">
+                            </a>
+
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        Randomly generated values
+                                    </h2>
+                                    <!-- extra info if needed
+                                                <p>Some example text.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" card-2">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/ PietMondrian.png"
+                                    alt="card-2: recreation of Piet Mondrian's work">
+
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/ Theo-van-Doesburg-“CompositionVII-TheThreeGraces".png"
+                                            alt="card-3:recreation of Theo Van Doesburg “Composition VII  - The Three Graces"> -->
+                            </a>
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        Replicas
+                                    </h2>
+                                    <!-- extra info if needed 
+                                     <p>Some example text.</p>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-3">
+                            <a
+                                href="file:///Users/mariadegiorgio/Desktop/GitHub/MariaDegiorgio.github.io/lesson%201.html">
+                                <img class="cardsimg" src="imageforportfoliofinalassigment/Gradient-effect.png"
+                                    alt="card-3:totebag">
+
+                                <!-- <img class="cardsimg" src="imageforportfoliofinalassigment/curve.png"
+                                            alt="card-3:totebag">
+                                         <img class="cardsimg" src="imageforportfoliofinalassigment/lines.png"
+                                            alt="card-3:totebag">
+                                        
+                                        -->
+                            </a>
+                            <div class="hover">
+                                <div class="overlay">
+                                    <h2>
+                                        For-Loops
+                                    </h2>
+                                    <!-- extra info if needed
+                                                <p>Some example text.</p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
 h1{
     /* *:not(h1)- remove padding*/  
     writing-mode: vertical-lr;
-    position: absolute; 
-  /*  https://stackoverflow.com/questions/14634595/center-h1-over-image-in-a-div*/  
+    position: absolute; */
+  /*  https://stackoverflow.com/questions/14634595/center-h1-over-image-in-a-div */
 }
 
 .carousel-item {

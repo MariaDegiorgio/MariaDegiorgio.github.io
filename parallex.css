@@ -130,7 +130,7 @@
             font-family: helvetica;
             font-weight: 700;
             font-size: 70px;
-            letter-spacing: 2px;
+          s  letter-spacing: 2px;
             transform: translate(0, 0%) rotate(-90deg);
           }
           
@@ -139,47 +139,170 @@
           background-attachment: fixed;
         }*/
 
- 
-  
-
- /* to remove the visible of side scroll bar */
-    ::-webkit-scrollbar { 
-        display: none; 
-    } 
-
-
-    .paralax-2{
-     background-color: grey;
-       font-size:36px  
-    }
+       /*  font-family: 'Abril Fatface', cursive;
+        font-family: 'Covered By Your Grace', cursive;
+        font-family: 'Damion', cursive;
+        font-family: 'Great Vibes', cursive;
+        font-family: 'League Script', cursive;
+        font-family: 'Sacramento', cursive; */
       
+        /*  @include media-breakpoint-between(md, xl) 
+        { */
+
+        ::-webkit-scrollbar { 
+          /* to remove the visible of side scroll bar */
+             display: none; 
+         } 
+        
+        .navbar{
+           border-bottom: 1px solid black;
+        }
+            
+         .nav-item nav-link {
+              text-align: left;
+        }
+
+        .text{
+          background-image:url(imagesforassigment/deep-blue-clouded-marble-textures-plain-820x532copy.jpg);
+          width:100vw; 
+          height:100vh; 
+          background-repeat: no-repeat, repeat; 
+          background-position: center;
+          text-align: center; 
+          vertical-align:middle;
+          justify-content: center;
+       
+           /*automatically centres objects + responsive
+           display: block;
+           margin-left: auto;
+           margin-right: auto */
+       }
+
+       h3, h4{
+        text-align: center; 
+        vertical-align:middle;
+       }
+
+       h3{
+        font-family: 'Abril Fatface', cursive;
+        font-size: 150px;
+        color:#58595b;
+       }
+
+       h4{
+        font-family: 'Great Vibes', cursive;
+        font-size: 125px;
+        color:#bd8f92;
+
+        padding-top: 20px;
+        
+       }
+
+       .carousel-inner {
+        padding-top: 10px;
+      }
+
+       .fas{
+        position: relative;
+
+          }
+
+        h1{
+          /* *:not(h1)- remove padding*/  
+          padding-top: 10px;
+
+          writing-mode: vertical-lr;
+          position: absolute;
+        /*  https://stackoverflow.com/questions/14634595/center-h1-over-image-in-a-div */
+        font-family: 'Abril Fatface', cursive;
+        font-size: 30px;
+      }
+      
+      .carousel-item {
+          padding-left: 80px;
+         /*  <div class="carousel-inner" role="listbox" style=" width:100%; height: 300px !important;"> 
+         or 
+          height: 300px; - to specify height of carousel */  
+      }
+      
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        position: relative;
+       
+         /*width:50%; 
+        height:25%!important; 
+        
+        padding-top: 10px;
+        padding-left: 80px;*/ 
+      }
+      
+      .cardsimg{ 
+          position: absolute;
+          height: 40vh;
+          width: 18rem;
+          /* crops an image to that dimention
+          overflow: hidden; or resize: both; overflow: scroll; or */ 
+         object-fit: cover;
+
+          /*curled edges of card */   
+          border-radius: 0px;
+         
+          border-top: none;
+          border-bottom: none;
+          border-left: none ;
+
+         margin-left:20px;
+         padding-left: 5px;
+
+         margin-right:20px;  
+         padding-right: 15px;
+         border-right: 2px solid black;
+
+      }
+      
+       .cards a:hover {
+          position: relative;
+          height: 40vh;
+          width: 18rem;
+          transition: 0.2s ease;
+          color: black;
+          opacity: 0.1;
+      }
+      
+      .overlay {
+          /* Card size */
+          height: 40vh;
+          width: 18rem;
+          margin-left:20px;
+          
+          color: whitesmoke;
+        
+          font-family: 'Abril Fatface', cursive;
+          font-size: 20px;
+          text-align: center;
+      }
+
+      h2{ 
+      
+      font-family: 'Abril Fatface', cursive;
+      font-size: 20px;
+      color: #000;
+      text-align: center;
+      }
+ 
+
+
+/*  fonts specification according to screen size 
     
-    .fas  {
-         display: block;
-    margin-left: auto;
-    margin-right: auto 
-     
-        /*
-        float: inline-end;
-         align-content: center;
-        align-content: space-evenly;
-        align-items: end;
 
-         display: flex;
-        justify-content: center;
-        align-items: end;
 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    @media screen and (min-width: 601px) {
+      h4{
+        font-family: 'Great Vibes', cursive;
+        font-size: 125px;
+        color:#bd8f92;
 
-    justify-items: center;
-    align-items: end;*/
-}
-
-.intoimage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-   
+        padding-top: 20px;
+        
+       }
+    }
+*/
