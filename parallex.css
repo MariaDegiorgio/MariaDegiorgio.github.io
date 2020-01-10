@@ -181,6 +181,7 @@
        h3, h4{
         text-align: center; 
         vertical-align:middle;
+      
        }
 
        h3{
@@ -240,8 +241,9 @@
           height: 40vh;
           width: 18rem;
           /* crops an image to that dimention
-          overflow: hidden; or resize: both; overflow: scroll; or */ 
-         object-fit: cover;
+          overflow: hidden; or resize: both; overflow: scroll; or*/
+         object-fit: cover;  
+         
 
           /*curled edges of card */   
           border-radius: 0px;
@@ -268,8 +270,9 @@
           opacity: 0.1;
       }
       
-      .overlay {
-          /* Card size */
+       .overlay {
+          
+         /* text */
           height: 40vh;
           width: 18rem;
           margin-left:20px;
@@ -286,6 +289,7 @@
       font-family: 'Abril Fatface', cursive;
       font-size: 20px;
       color: #000;
+
       text-align: center;
       }
  
