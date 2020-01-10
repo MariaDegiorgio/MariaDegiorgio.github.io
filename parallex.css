@@ -242,9 +242,9 @@
           width: 18rem;
           /* crops an image to that dimention
           overflow: hidden; or resize: both; overflow: scroll; or*/
-         object-fit: cover;  
-         
-
+         object-fit: cover; 
+        
+  
           /*curled edges of card */   
           border-radius: 0px;
          
@@ -258,9 +258,8 @@
          margin-right:20px;  
          padding-right: 15px;
          border-right: 2px solid black;
-
       }
-      
+    
        .cards a:hover {
           position: relative;
           height: 40vh;
@@ -294,6 +293,7 @@
       }
  
 
+    
 
 /*  fonts specification according to screen size 
     
